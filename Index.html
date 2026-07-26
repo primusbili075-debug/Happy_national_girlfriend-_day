@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy national girlfriend Day ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#ff8fc4,#c889ff,#ffffff);
+overflow-x:hidden;
+color:#fff;
+}
+
+/* Background Blur */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url("images/1000273923.jpg") center/cover;
+filter:blur(10px) brightness(.35);
+z-index:-2;
+}
+
+body::after{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.25);
+z-index:-1;
+}
+
+/* Loading */
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#ff4f91;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+z-index:99999;
+transition:1s;
+}
+
+#loader h2{
+margin-top:15px;
+}
+
+.heart{
+font-size:70px;
+animation:beat 1s infinite;
+}
+
+@keyframes beat{
+0%,100%{transform:scale(1);}
+50%{transform:scale(1.25);}
+}
+
+/* Floating Hearts */
+
+.floatHeart{
+position:fixed;
+bottom:-50px;
+font-size:20px;
+color:#ff7ab6;
+pointer-events:none;
+animation:up 8s linear infinite;
+}
+
+@keyframes up{
+
+0%{
+transform:translateY(0) rotate(0);
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+
+}
+
+/* Hero */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.glass{
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(18px);
+
+padding:40px;
+
+border-radius:30px;
+
+text-align:center;
+
+box-shadow:0 15px 40px rgba(0,0,0,.3);
+
+max-width:700px;
+
+}
+
+.glass h1{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+}
+
+.glass p{
+
+line-height:1.9;
+
+}
+
+button{
+
+margin-top:20px;
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:40px;
+
+background:#ff4f91;
+
+color:#fff;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:translateY(-5px);
+
+background:#ff2877;
+
+}
+
+/* Section */
+
+section{
+
+padding:70px 20px;
+
+}
+
+.title{
+
+text-align:center;
+
+font-size:34px;
+
+margin-bottom:25px;
+
+}
+
+/* Love Counter */
+
+.counter{
+
+text-align:center;
+
+}
+
+#days{
+
+font-size:55px;
+
+font-weight:bold;
+
+color:#ffe082;
+
+margin-top:15px;
+
+}
+
+/* Card */
+
+.card{
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(18px);
+
+padding:30px;
+
+border-radius:25px;
+
+max-width:850px;
+
+margin:auto;
+
+line-height:2;
+
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+}
+
+#typing{
+
+white-space:pre-line;
+
+}
+
+/* Gallery */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:15px;
+
+}
+
+.grid img{
+
+width:100%;
+
+height:240px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.grid img:hover{
+
+transform:scale(1.05);
+
+}
+
+/* Video */
+
+.video-box{
+
+max-width:900px;
+
+margin:auto;
+
+background:rgba(255,255,255,.15);
+
+padding:20px;
+
+border-radius:25px;
+
+backdrop-filter:blur(15px);
+
+}
+
+.video-box video{
+
+width:100%;
+
+border-radius:20px;
+
+}
+/* ================= DARK MODE ================= */
+
+body.dark{
+    background:linear-gradient(135deg,#121212,#1f1f1f,#2c2c2c);
+    color:#ffffff;
+}
+
+body.dark::before{
+    filter:blur(10px) brightness(.15);
+}
+
+body.dark::after{
+    background:rgba(0,0,0,.45);
+}
+
+body.dark .glass,
+body.dark .card,
+body.dark .video-box{
+    background:rgba(40,40,40,.45);
+    backdrop-filter:blur(18px);
+}
+
+body.dark button{
+    background:#555;
+    color:#fff;
+}
+
+body.dark button:hover{
+    background:#777;
+}
+
+body.dark #days{
+    color:#ffd54f;
+}
+
+body.dark .title{
+    color:#ffffff;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="loader">
+
+<div class="heart">❤️</div>
+
+<h2>Loading Love...</h2>
+
+</div>
+
+<section class="hero">
+
+<div class="glass">
+
+<h1>Happy national girlfriend day❤️</h1>
+
+<p>
+
+Terima kasih sudah menjadi bagian terindah dalam hidupku.
+
+Semoga kita selalu bersama,
+
+selalu saling mendukung,
+
+dan menciptakan lebih banyak kenangan indah.
+
+</p>
+
+<button onclick="document.getElementById('love').scrollIntoView({behavior:'smooth'})">
+
+Mulai ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<section id="love" class="counter">
+
+<h2 class="title">❤️ Kita Bersama Selama ❤️</h2>
+
+<div id="days">0 Hari</div>
+
+</section>
+<!-- ================= SURAT CINTA ================= -->
+
+<section>
+
+<h2 class="title">💌 Surat Untukmu</h2>
+
+<div class="card">
+
+<p id="typing"></p>
+
+</div>
+
+</section>
+
+<!-- ================= GALERI ================= -->
+
+<section>
+
+<h2 class="title">📸 Kenangan Kita</h2>
+
+<div class="grid">
+
+
+<img src="images/foto1.jpg" onclick="openImg(this.src)">
+
+<img src="images/foto2.jpg" onclick="openImg(this.src)">
+
+<img src="images/foto3.jpg" onclick="openImg(this.src)">
+
+<img src="images/foto4.jpg" onclick="openImg(this.src)">
+</div>
+
+</section>
+
+<!-- ================= VIDEO ================= -->
+
+<section>
+
+<h2 class="title">🎥 Video Kenangan Kita</h2>
+
+<div class="video-box">
+
+<video controls playsinline>
+
+<source src="video/caca.mp4" type="video/mp4">
+
+Browser Anda tidak mendukung video.
+
+</video>
+
+</div>
+
+</section>
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div id="lightbox"
+
+style="display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+justify-content:center;
+align-items:center;
+z-index:9999;"
+
+onclick="closeImg()">
+
+<img id="showImg"
+
+style="max-width:90%;
+max-height:90%;
+border-radius:20px;">
+
+</div>
+
+<!-- ================= HADIAH ================= -->
+
+<section style="text-align:center;">
+
+<h2 class="title">🎁 Hadiah Untukmu</h2>
+
+<div class="card">
+
+<p>
+
+Terima kasih telah menjadi alasan aku tersenyum setiap hari.
+
+Semoga kita selalu bersama, saling menjaga,
+
+dan terus menciptakan kenangan indah.
+
+❤️ Happy national girlfriend Day ❤️
+
+</p>
+
+<button onclick="gift()">
+
+Buka Hadiah 🎁
+
+</button>
+
+</div>
+
+</section>
+<!-- ================= MUSIC ================= -->
+
+<section>
+
+<h2 class="title">🎵 Lagu Kita</h2>
+
+<div class="card" style="text-align:center;">
+
+<audio id="music" controls loop>
+<source src="music/Best Part.mp3" type="audio/mpeg">
+Browser Anda tidak mendukung audio.
+</audio>
+
+<br>
+
+<button onclick="toggleMusic()">
+🎵 Play / Pause
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= DARK MODE ================= -->
+
+<button id="darkBtn"
+style="
+position:fixed;
+top:20px;
+right:20px;
+z-index:999;
+border-radius:50%;
+width:55px;
+height:55px;
+font-size:22px;"
+onclick="darkMode()">
+
+🌙
+
+}
+</button>
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button id="topBtn"
+style="
+display:none;
+position:fixed;
+right:20px;
+bottom:20px;
+border-radius:50%;
+width:55px;
+height:55px;
+font-size:22px;"
+onclick="window.scrollTo({top:0,behavior:'smooth'})">
+
+⬆
+
+</button>
+
+<script>
+
+// ================= LOADER =================
+
+window.onload=function(){
+
+setTimeout(function(){
+
+loader.style.opacity="0";
+
+setTimeout(function(){
+
+loader.style.display="none";
+
+},800);
+
+},1800);
+
+startTyping();
+
+createHeart();
+
+countLove();
+
+}
+
+// ================= LOVE COUNTER =================
+
+// GANTI TANGGAL JADIAN DI SINI
+const startDate=new Date("2026-05-08");
+
+function countLove(){
+
+const today=new Date();
+
+const diff=today-startDate;
+
+const days=Math.floor(diff/(1000*60*60*24));
+
+document.getElementById("days").innerHTML=days+" Hari ❤️";
+
+}
+
+setInterval(countLove,1000);
+
+// ================= TYPEWRITER =================
+
+const message=`Happy national girlfriend Day ❤️
+
+Terima kasih ee sayang sudah hadir dalam hidupku.
+
+Semoga hubungan kita selalu dipenuhi kebahagiaan, tawa, dan cinta.
+
+Aku sayang kamu, hari ini, besok, dan seterusnya. ❤️`;
+
+let index=0;
+
+function startTyping(){
+
+if(index<message.length){
+
+typing.innerHTML+=message.charAt(index);
+
+index++;
+
+setTimeout(startTyping,40);
+
+}
+
+}
+
+// ================= LIGHTBOX =================
+
+function openImg(src){
+
+lightbox.style.display="flex";
+
+showImg.src=src;
+
+}
+
+function closeImg(){
+
+lightbox.style.display="none";
+
+}
+
+// ================= MUSIC =================
+
+const music=document.getElementById("music");
+
+function toggleMusic(){
+
+if(music.paused){
+
+music.play();
+
+}else{
+
+music.pause();
+
+}
+
+}
+
+// ================= HADIAH =================
+
+function gift(){
+
+alert("❤️ Happy national girlfriend Day ❤️\n\nTerima kasih sudah menjadi bagian terindah dalam hidupku. lopyuuu sayanggg. 💖");
+
+}
+
+// ================= DARK MODE =================
+
+function darkMode() {
+
+    document.body.classList.toggle("dark");
+
+    const btn = document.getElementById("darkBtn");
+
+    if (document.body.classList.contains("dark")) {
+        btn.innerHTML = "☀️";
+    } else {
+        btn.innerHTML = "🌙";
+    }
+
+}
+// ================= HEART =================
+
+function createHeart(){
+
+setInterval(function(){
+
+let h=document.createElement("div");
+
+h.className="floatHeart";
+
+h.innerHTML="❤";
+
+h.style.left=Math.random()*100+"%";
+
+h.style.fontSize=(18+Math.random()*20)+"px";
+
+h.style.animationDuration=(6+Math.random()*5)+"s";
+
+document.body.appendChild(h);
+
+setTimeout(function(){
+
+h.remove();
+
+},10000);
+
+},350);
+
+}
+
+// ================= TOP BUTTON =================
+
+window.onscroll=function(){
+
+if(document.documentElement.scrollTop>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+}
+// ================= ROSE PETALS =================
+
+function createRose(){
+
+setInterval(function(){
+
+let rose=document.createElement("div");
+
+rose.innerHTML="🌹";
+
+rose.style.position="fixed";
+
+rose.style.top="-50px";
+
+rose.style.left=Math.random()*100+"%";
+
+rose.style.fontSize=(18+Math.random()*18)+"px";
+
+rose.style.zIndex="999";
+
+rose.style.pointerEvents="none";
+
+rose.style.transition="8s linear";
+
+document.body.appendChild(rose);
+
+setTimeout(function(){
+
+rose.style.top="110%";
+
+rose.style.transform="rotate(720deg)";
+
+rose.style.opacity="0";
+
+},100);
+
+setTimeout(function(){
+
+rose.remove();
+
+},8500);
+
+},1200);
+
+}
+
+createRose();
+
+// ================= BINTANG =================
+
+function createStar(){
+
+setInterval(function(){
+
+let star=document.createElement("div");
+
+star.innerHTML="✨";
+
+star.style.position="fixed";
+
+star.style.left=Math.random()*100+"%";
+
+star.style.top=Math.random()*100+"%";
+
+star.style.fontSize=(10+Math.random()*15)+"px";
+
+star.style.opacity=Math.random();
+
+star.style.pointerEvents="none";
+
+document.body.appendChild(star);
+
+setTimeout(function(){
+
+star.remove();
+
+},2500);
+
+},500);
+
+}
+
+createStar();
+
+// ================= CAROUSEL =================
+
+let indexFoto=0;
+
+const foto=document.querySelectorAll(".grid img");
+
+setInterval(function(){
+
+foto.forEach(function(img){
+
+img.style.opacity=".5";
+
+img.style.transform="scale(.95)";
+
+});
+
+foto[indexFoto].style.opacity="1";
+
+foto[indexFoto].style.transform="scale(1.08)";
+
+indexFoto++;
+
+if(indexFoto>=foto.length){
+
+indexFoto=0;
+
+}
+
+},2500);
+// ================= TIMELINE =================
+
+const timeline=document.createElement("section");
+
+timeline.innerHTML=`
+
+<h2 class="title">❤️ Perjalanan Kita ❤️</h2>
+
+<div class="card">
+
+<h3>🌸 Pertama Bertemu</h3>
+<p>Hari dimana semuanya dimulai maaf ee syg waktu pertama kali ketemu Beta bukan kasi kesan yg bagus ma malah b ketawa syg yg ada menangis karna mo pindah kelas🫰🏼🫰🏼</p>
+
+<br>
+
+<h3>💕 Mulai Bersama</h3>
+<p> 8 mei 2026, makasih banyak sayang su mau pilih Beta sebagai pasangan di hari itu, beta Ju waktu itu aga syok sdikit karna syg yg ajak pacaran duluan😂 semoga ktong dua pu hubungan ni bisa bertahan selamanya ee🫰🏼🫰🏼</p>
+
+<br>
+
+<h3>📸 Menciptakan Kenangan</h3>
+<p>Foto, video, tawa, dan cerita.pokoknya semua kenangan antara Beta dan Caca akan selalu b ingat</p>
+
+<br>
+
+<h3>💍 Masa Depan</h3>
+<p>Semoga kita selalu bersama sampai selamanya.</p>
+
+</div>
+
+`;
+
+document.body.appendChild(timeline);
+
+// ================= CONFETTI =================
+
+function confetti(){
+
+for(let i=0;i<120;i++){
+
+let c=document.createElement("div");
+
+c.style.position="fixed";
+
+c.style.width="8px";
+
+c.style.height="8px";
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.top="-20px";
+
+c.style.background=
+["#ff4f91","#ffd54f","#ffffff","#b388ff"]
+[Math.floor(Math.random()*4)];
+
+c.style.borderRadius="50%";
+
+c.style.pointerEvents="none";
+
+c.style.transition="5s linear";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{
+
+c.style.top="110vh";
+
+c.style.transform="rotate(720deg)";
+
+},50);
+
+setTimeout(()=>{
+
+c.remove();
+
+},5200);
+
+}
+
+}
+
+setTimeout(confetti,2200);
+
+// ================= FOOTER =================
+
+const footer=document.createElement("footer");
+
+footer.style.padding="40px";
+
+footer.style.textAlign="center";
+
+footer.style.fontSize="15px";
+
+footer.innerHTML="❤️ Happy national girlfriend Day ❤️<br><br>Dibuat dengan penuh cinta untuk seseorang yang paling spesial di hidupku.";
+
+document.body.appendChild(footer);
+// ================= PESAN SELAMAT DATANG =================
+
+setTimeout(function(){
+
+alert("❤️ Selamat Datang ❤️\n\nHappy national girlfriend Day!\nSemoga cinta kita selalu abadi. 💖");
+
+},2500);
+
+// ================= VIDEO =================
+
+const video=document.querySelector("video");
+
+if(video){
+
+video.addEventListener("play",function(){
+
+if(!music.paused){
+
+music.pause();
+
+}
+
+});
+
+video.addEventListener("ended", function () {
+    music.play().catch(function(error) {
+        console.log("Autoplay musik diblokir:", error);
+    });
+});
+}
+
+// ================= PENUTUP =================
+
+console.log("Happy national girlfriend Day ❤️");
+
+</script>
+
+</body>
+
+</html>
+
