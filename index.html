@@ -339,41 +339,47 @@ body.dark .title{
     color:#ffffff;
 }
     /* ================= EFEK AMPLOP & BUNGA ================= */
+/* Container Utama */
 .envelope-wrapper {
   position: relative;
   width: 100%;
-  height: 120px;
+  height: 160px; /* Diberi ruang agar bunga bisa meluncur naik */
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+  align-items: flex-end; /* Memposisikan amplop di bawah */
+  margin: 30px 0;
 }
 
+/* Amplop (Harus berada di DEPAN bunga) */
 .envelope {
-  font-size: 60px;
-  z-index: 2;
+  font-size: 80px;
+  z-index: 5; /* Angka lebih besar agar menutup bunga */
   position: relative;
+  line-height: 1;
 }
 
+/* Wadah Bunga (Harus berada di BELAKANG amplop) */
 .flower-box {
   position: absolute;
   bottom: 10px;
-  transform: translateY(20px) scale(0);
+  transform: translateY(40px) scale(0.2); /* Sembunyi di dalam amplop */
   opacity: 0;
-  transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  z-index: 1;
+  transition: all 1.4s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 2; /* Angka lebih kecil dari amplop */
+  pointer-events: none;
 }
 
 .flower-img {
-  width: 180px;
+  width: 160px; /* Ukuran buket bunga */
   height: auto;
-  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
 }
 
+/* KETIKA ANIMASI AKTIF (Bunga Keluar & Mekar) */
 .flower-box.bloom {
-  transform: translateY(-70px) scale(1.1);
+  transform: translateY(-70px) scale(1.1); /* Meluncur naik ke atas amplop */
   opacity: 1;
 }
+    
     
 </style>
 
