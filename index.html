@@ -4,347 +4,258 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Happy national girlfriend Day ❤️</title>
+<title>Happy National Girlfriend Day ❤️</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+  scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(135deg,#ff8fc4,#c889ff,#ffffff);
-overflow-x:hidden;
-color:#fff;
+  /* Background romantis modern: Paduan warna Dusk Rose & Deep Violet */
+  background: linear-gradient(135deg, #1f0b18 0%, #3b132b 40%, #5a1939 70%, #2a081a 100%);
+  background-attachment: fixed;
+  overflow-x:hidden;
+  color:#fff;
+  position: relative;
 }
 
-/* Background Blur */
-
+/* Background Soft Glow (Aura Romantis) */
 body::before{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:url("images/1000273923.jpg") center/cover;
-filter:blur(10px) brightness(.35);
-z-index:-2;
-}
-
-body::after{
-content:"";
-position:fixed;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.25);
-z-index:-1;
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(255, 105, 180, 0.25), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(255, 79, 145, 0.2), transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(186, 85, 211, 0.15), transparent 50%);
+  z-index:-1;
+  pointer-events: none;
 }
 
 /* Loading */
-
 #loader{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:#ff4f91;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-z-index:99999;
-transition:1s;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#2a081a;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  z-index:99999;
+  transition:1s;
 }
 
 #loader h2{
-margin-top:15px;
+  margin-top:15px;
+  color: #ff7ab6;
 }
 
 .heart{
-font-size:70px;
-animation:beat 1s infinite;
+  font-size:70px;
+  animation:beat 1s infinite;
 }
 
 @keyframes beat{
-0%,100%{transform:scale(1);}
-50%{transform:scale(1.25);}
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.25);}
 }
 
 /* Floating Hearts */
-
 .floatHeart{
-position:fixed;
-bottom:-50px;
-font-size:20px;
-color:#ff7ab6;
-pointer-events:none;
-animation:up 8s linear infinite;
+  position:fixed;
+  bottom:-50px;
+  font-size:20px;
+  color:#ff8fc4;
+  text-shadow: 0 0 10px rgba(255,143,196,0.6);
+  pointer-events:none;
+  animation:up 8s linear infinite;
+  z-index: 1;
 }
 
 @keyframes up{
-
-0%{
-transform:translateY(0) rotate(0);
-opacity:1;
-}
-
-100%{
-transform:translateY(-120vh) rotate(360deg);
-opacity:0;
-}
-
+  0%{
+    transform:translateY(0) rotate(0);
+    opacity:1;
+  }
+  100%{
+    transform:translateY(-120vh) rotate(360deg);
+    opacity:0;
+  }
 }
 
 /* Hero */
-
 .hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:20px;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
 }
 
 .glass{
-
-background:rgba(255,255,255,.15);
-
-backdrop-filter:blur(18px);
-
-padding:40px;
-
-border-radius:30px;
-
-text-align:center;
-
-box-shadow:0 15px 40px rgba(0,0,0,.3);
-
-max-width:700px;
-
+  background:rgba(255, 255, 255, 0.08);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding:40px 30px;
+  border-radius:30px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(0,0,0,0.4);
+  max-width:700px;
 }
 
 .glass h1{
-
-font-size:40px;
-
-margin-bottom:20px;
-
+  font-size:36px;
+  margin-bottom:20px;
+  background: linear-gradient(45deg, #ff9a9e, #fecfef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .glass p{
-
-line-height:1.9;
-
+  line-height:1.9;
+  color: #f1f1f1;
 }
 
 button{
-
-margin-top:20px;
-
-padding:15px 35px;
-
-border:none;
-
-border-radius:40px;
-
-background:#ff4f91;
-
-color:#fff;
-
-font-size:16px;
-
-cursor:pointer;
-
-transition:.3s;
-
+  margin-top:20px;
+  padding:15px 35px;
+  border:none;
+  border-radius:40px;
+  background: linear-gradient(45deg, #ff4f91, #ff7ab6);
+  color:#fff;
+  font-size:16px;
+  font-weight: 600;
+  cursor:pointer;
+  box-shadow: 0 8px 25px rgba(255, 79, 145, 0.4);
+  transition:.3s;
 }
 
 button:hover{
-
-transform:translateY(-5px);
-
-background:#ff2877;
-
+  transform:translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 79, 145, 0.6);
 }
 
 /* Section */
-
 section{
-
-padding:70px 20px;
-
+  padding:70px 20px;
 }
 
 .title{
-
-text-align:center;
-
-font-size:34px;
-
-margin-bottom:25px;
-
+  text-align:center;
+  font-size:32px;
+  margin-bottom:25px;
+  background: linear-gradient(45deg, #ff9a9e, #fecfef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Love Counter */
-
 .counter{
-
-text-align:center;
-
+  text-align:center;
 }
 
 #days{
-
-font-size:55px;
-
-font-weight:bold;
-
-color:#ffe082;
-
-margin-top:15px;
-
+  font-size:55px;
+  font-weight:bold;
+  color:#ffe082;
+  text-shadow: 0 0 15px rgba(255, 224, 130, 0.4);
+  margin-top:15px;
 }
 
 /* Card */
-
 .card{
-
-background:rgba(255,255,255,.15);
-
-backdrop-filter:blur(18px);
-
-padding:30px;
-
-border-radius:25px;
-
-max-width:850px;
-
-margin:auto;
-
-line-height:2;
-
-box-shadow:0 10px 30px rgba(0,0,0,.3);
-
+  background:rgba(255, 255, 255, 0.08);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding:30px;
+  border-radius:25px;
+  max-width:850px;
+  margin:auto;
+  line-height:2;
+  box-shadow:0 15px 35px rgba(0,0,0,0.3);
 }
 
 #typing{
-
-white-space:pre-line;
-
+  white-space:pre-line;
 }
 
 /* Gallery */
-
 .grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-
-gap:15px;
-
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:15px;
 }
 
 .grid img{
-
-width:100%;
-
-height:240px;
-
-object-fit:cover;
-
-border-radius:20px;
-
-cursor:pointer;
-
-transition:.4s;
-
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  border-radius:20px;
+  cursor:pointer;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition:.4s;
 }
 
 .grid img:hover{
-
-transform:scale(1.05);
-
+  transform:scale(1.05);
+  border-color: #ff7ab6;
 }
 
 /* Video */
-
 .video-box{
-
-max-width:900px;
-
-margin:auto;
-
-background:rgba(255,255,255,.15);
-
-padding:20px;
-
-border-radius:25px;
-
-backdrop-filter:blur(15px);
-
+  max-width:900px;
+  margin:auto;
+  background:rgba(255, 255, 255, 0.08);
+  padding:20px;
+  border-radius:25px;
+  backdrop-filter:blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .video-box video{
-
-width:100%;
-
-border-radius:20px;
-
+  width:100%;
+  border-radius:20px;
 }
-/* ================= DARK MODE ================= */
 
+/* Dark Mode */
 body.dark{
-    background:linear-gradient(135deg,#121212,#1f1f1f,#2c2c2c);
-    color:#ffffff;
-}
-
-body.dark::before{
-    filter:blur(10px) brightness(.15);
-}
-
-body.dark::after{
-    background:rgba(0,0,0,.45);
+    background: linear-gradient(135deg, #090308 0%, #12050e 50%, #050004 100%);
+    color:#e0e0e0;
 }
 
 body.dark .glass,
 body.dark .card,
 body.dark .video-box{
-    background:rgba(40,40,40,.45);
-    backdrop-filter:blur(18px);
-}
-
-body.dark button{
-    background:#555;
-    color:#fff;
-}
-
-body.dark button:hover{
-    background:#777;
+    background:rgba(20, 10, 18, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 body.dark #days{
     color:#ffd54f;
 }
 
-body.dark .title{
-    color:#ffffff;
-}
-    /* ================= ROMANTIC GIFT ================= */
-
+/* Romantic Gift Popup */
 .gift-popup{
   position:fixed;
   inset:0;
-  background:rgba(0,0,0,.75);
-  backdrop-filter:blur(10px);
+  background:rgba(0, 0, 0, 0.8);
+  backdrop-filter:blur(12px);
   display:none;
   justify-content:center;
   align-items:center;
@@ -355,13 +266,14 @@ body.dark .title{
 .gift-card{
   width:100%;
   max-width:360px;
-  background:rgba(255,255,255,.15);
-  backdrop-filter:blur(18px);
+  background:rgba(45, 15, 35, 0.85);
+  border: 1px solid rgba(255, 122, 182, 0.3);
+  backdrop-filter:blur(20px);
   border-radius:30px;
   padding:28px 22px;
   text-align:center;
   color:#fff;
-  box-shadow:0 20px 50px rgba(255,79,145,.35);
+  box-shadow:0 20px 50px rgba(255, 79, 145, 0.3);
 }
 
 .gift-photo{
@@ -370,7 +282,8 @@ body.dark .title{
   margin:0 auto 18px;
   border-radius:50%;
   overflow:hidden;
-  border:4px solid rgba(255,255,255,.9);
+  border:3px solid #ff7ab6;
+  box-shadow: 0 0 15px rgba(255, 122, 182, 0.5);
 }
 
 .gift-photo img{
@@ -380,13 +293,14 @@ body.dark .title{
 }
 
 .gift-card h2{
-  font-size:28px;
+  font-size:26px;
   margin-bottom:14px;
+  color: #ff9a9e;
 }
 
 .gift-card p{
   line-height:1.8;
-  font-size:16px;
+  font-size:15px;
   min-height:110px;
   white-space:pre-line;
 }
@@ -413,261 +327,155 @@ body.dark .title{
   font-size:16px;
   font-weight:600;
   cursor:pointer;
-    }
-</style>
+}
 
+/* Animasi Efek Hati Membesar Saat Peluk Virtual */
+.hug-heart {
+  position: fixed;
+  font-size: 30px;
+  pointer-events: none;
+  z-index: 100002;
+  animation: hugPop 1.8s ease-out forwards;
+}
+
+@keyframes hugPop {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.5) rotate(0deg);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translate(-50%, -100px) scale(2.2) rotate(15deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -200px) scale(3) rotate(-15deg);
+  }
+}
+
+</style>
 </head>
 
 <body>
 
 <div id="loader">
-
-<div class="heart">❤️</div>
-
-<h2>Loading Love...</h2>
-
+  <div class="heart">❤️</div>
+  <h2>Loading Love...</h2>
 </div>
 
 <section class="hero">
-
-<div class="glass">
-  <h1>Happy National Girlfriend Day ❤️</h1>
-
-  <p>
-    Happy national Girlfriend Day untuk wanita yang kalau ngambek lucunya nambah 100%. 
-    Makasih sudah mewarnai hari-hariku yang tadinya flat ini.
-  </p>
-
-  <button id="btnMulai" onclick="startBloom(); document.getElementById('love').scrollIntoView({behavior:'smooth'})">
-    Mulai ❤️
-  </button>
-</div>
-    
+  <div class="glass">
+    <h1>Happy National Girlfriend Day ❤️</h1>
+    <p>
+      Happy national Girlfriend Day untuk wanita yang kalau ngambek lucunya nambah 100%. 
+      Makasih sudah mewarnai hari-hariku yang tadinya flat ini.
+    </p>
+    <button id="btnMulai" onclick="document.getElementById('love').scrollIntoView({behavior:'smooth'})">
+      Mulai ❤️
+    </button>
+  </div>
 </section>
-    
 
 <section id="love" class="counter">
-
-<h2 class="title">❤️ Kita Bersama Selama ❤️</h2>
-
-<div id="days">0 Hari</div>
-
+  <h2 class="title">❤️ Kita Bersama Selama ❤️</h2>
+  <div id="days">0 Hari</div>
 </section>
-<!-- ================= SURAT CINTA ================= -->
 
 <section>
-
-<h2 class="title">💌 Surat Untukmu</h2>
-
-<div class="card">
-
-<p id="typing"></p>
-
-</div>
-
+  <h2 class="title">💌 Surat Untukmu</h2>
+  <div class="card">
+    <p id="typing"></p>
+  </div>
 </section>
-
-<!-- ================= GALERI ================= -->
 
 <section>
-
-<h2 class="title">📸 Kenangan Kita</h2>
-
-<div class="grid">
-
-
-<img src="foto1.jpg" onclick="openImg(this.src)">
-
-<img src="foto2.jpg" onclick="openImg(this.src)">
-
-<img src="foto3.jpg" onclick="openImg(this.src)">
-
-<img src="foto4.jpg" onclick="openImg(this.src)">
-</div>
-
+  <h2 class="title">📸 Kenangan Kita</h2>
+  <div class="grid">
+    <img src="foto1.jpg" onclick="openImg(this.src)">
+    <img src="foto2.jpg" onclick="openImg(this.src)">
+    <img src="foto3.jpg" onclick="openImg(this.src)">
+    <img src="foto4.jpg" onclick="openImg(this.src)">
+  </div>
 </section>
-
-<!-- ================= VIDEO ================= -->
 
 <section>
-
-<h2 class="title">🎥 Video Kenangan Kita</h2>
-
-<div class="video-box">
-
-<video controls playsinline>
-
-<source src="lv_0_20260726032153 (1)~2.mp4" type="video/mp4">
-
-Browser Anda tidak mendukung video.
-
-</video>
-
-</div>
-
+  <h2 class="title">🎥 Video Kenangan Kita</h2>
+  <div class="video-box">
+    <video controls playsinline>
+      <source src="lv_0_20260726032153 (1)~2.mp4" type="video/mp4">
+      Browser Anda tidak mendukung video.
+    </video>
+  </div>
 </section>
-
-<!-- ================= LIGHTBOX ================= -->
 
 <div id="lightbox"
-
-style="display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.9);
-justify-content:center;
-align-items:center;
-z-index:9999;"
-
-onclick="closeImg()">
-
-<img id="showImg"
-
-style="max-width:90%;
-max-height:90%;
-border-radius:20px;">
-
+  style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,.9); justify-content:center; align-items:center; z-index:9999;"
+  onclick="closeImg()">
+  <img id="showImg" style="max-width:90%; max-height:90%; border-radius:20px;">
 </div>
-
-<!-- ================= HADIAH ================= -->
 
 <section style="text-align:center;">
-
-<h2 class="title">🎁 Hadiah Untukmu</h2>
-
-<div class="card">
-
-<p>
-
-Terima kasih caca sudah sudah menjadi alasannya beta untuk tersenyum setiap hari
-
-Semoga kita selalu bersama, saling menjaga,
-
-dan terus menciptakan kenangan indah.
-        i'll always love you
-
-
-</p>
-
-<button onclick="gift()">
-
-Buka Hadiah 🎁
-
-</button>
-
-</div>
-
+  <h2 class="title">🎁 Hadiah Untukmu</h2>
+  <div class="card">
+    <p>
+      Terima kasih caca sudah sudah menjadi alasannya beta untuk tersenyum setiap hari.<br>
+      Semoga kita selalu bersama, saling menjaga, dan terus menciptakan kenangan indah.<br>
+      <i>I'll always love you</i>
+    </p>
+    <button onclick="gift()">Buka Hadiah 🎁</button>
+  </div>
 </section>
-<!-- ================= MUSIC ================= -->
 
 <section>
-
-<h2 class="title">🎵 Lagu Kita</h2>
-
-<div class="card" style="text-align:center;">
-
-<audio id="music" controls loop>
-<source src="H.E.R. - Best Part (Lyrics) Ft. Daniel Caesar (1).mp3" type="audio/mpeg">
-Browser Anda tidak mendukung audio.
-</audio>
-
-<br>
-
-<button onclick="toggleMusic()">
-🎵 Play / Pause
-</button>
-
-</div>
-
+  <h2 class="title">🎵 Lagu Kita</h2>
+  <div class="card" style="text-align:center;">
+    <audio id="music" controls loop>
+      <source src="H.E.R. - Best Part (Lyrics) Ft. Daniel Caesar (1).mp3" type="audio/mpeg">
+      Browser Anda tidak mendukung audio.
+    </audio>
+    <br>
+    <button onclick="toggleMusic()">🎵 Play / Pause</button>
+  </div>
 </section>
 
-<!-- ================= DARK MODE ================= -->
-
 <button id="darkBtn"
-style="
-position:fixed;
-top:20px;
-right:20px;
-z-index:999;
-border-radius:50%;
-width:55px;
-height:55px;
-font-size:22px;"
-onclick="darkMode()">
-
-🌙
-
-}
+  style="position:fixed; top:20px; right:20px; z-index:999; border-radius:50%; width:50px; height:50px; font-size:20px;"
+  onclick="darkMode()">
+  🌙
 </button>
 
-<!-- ================= BACK TO TOP ================= -->
-
 <button id="topBtn"
-style="
-display:none;
-position:fixed;
-right:20px;
-bottom:20px;
-border-radius:50%;
-width:55px;
-height:55px;
-font-size:22px;"
-onclick="window.scrollTo({top:0,behavior:'smooth'})">
-
-⬆
-
+  style="display:none; position:fixed; right:20px; bottom:20px; border-radius:50%; width:50px; height:50px; font-size:20px; z-index:999;"
+  onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  ⬆
 </button>
 
 <script>
-
-// ================= LOADER =================
-
+// LOADER
 window.onload=function(){
-
-setTimeout(function(){
-
-loader.style.opacity="0";
-
-setTimeout(function(){
-
-loader.style.display="none";
-
-},800);
-
-},1800);
-
-startTyping();
-
-createHeart();
-
-countLove();
-
+  setTimeout(function(){
+    const loader = document.getElementById("loader");
+    loader.style.opacity="0";
+    setTimeout(function(){
+      loader.style.display="none";
+    },800);
+  },1800);
+  startTyping();
+  createHeart();
+  countLove();
 }
 
-// ================= LOVE COUNTER =================
-
-// GANTI TANGGAL JADIAN DI SINI
+// LOVE COUNTER
 const startDate=new Date("2026-05-08");
-
 function countLove(){
-
-const today=new Date();
-
-const diff=today-startDate;
-
-const days=Math.floor(diff/(1000*60*60*24));
-
-document.getElementById("days").innerHTML=days+" Hari ❤️";
-
+  const today=new Date();
+  const diff=today-startDate;
+  const days=Math.floor(diff/(1000*60*60*24));
+  document.getElementById("days").innerHTML=days+" Hari ❤️";
 }
-
 setInterval(countLove,1000);
 
-// ================= TYPEWRITER =================
-
+// TYPEWRITER
 const message=`Happy national girlfriend Day ❤️
 Terima kasih ee sayangg su hadir bikin beta pu hari-hari jadi lebih berwarna.
 Beta senang bisa tertawa, cerita, dan jatuh cinta terus deng orang yang sama tiap hari 🤭
@@ -675,64 +483,41 @@ semoga ketong bisa tetap sama sama eee..
  ❤️`;
 
 let index=0;
-
 function startTyping(){
-
-if(index<message.length){
-
-typing.innerHTML+=message.charAt(index);
-
-index++;
-
-setTimeout(startTyping,40);
-
+  const typing = document.getElementById("typing");
+  if(index<message.length){
+    typing.innerHTML+=message.charAt(index);
+    index++;
+    setTimeout(startTyping,40);
+  }
 }
 
-}
-
-// ================= LIGHTBOX =================
-
+// LIGHTBOX
 function openImg(src){
-
-lightbox.style.display="flex";
-
-showImg.src=src;
-
+  document.getElementById("lightbox").style.display="flex";
+  document.getElementById("showImg").src=src;
 }
-
 function closeImg(){
-
-lightbox.style.display="none";
-
+  document.getElementById("lightbox").style.display="none";
 }
 
-// ================= MUSIC =================
-
+// MUSIC
 const music=document.getElementById("music");
-
 function toggleMusic(){
-
-if(music.paused){
-
-music.play();
-
-}else{
-
-music.pause();
-
+  if(music.paused){
+    music.play();
+  }else{
+    music.pause();
+  }
 }
 
-}
-
-// ================= ROMANTIC GIFT =================
-
+// ROMANTIC GIFT & VIRTUAL HUG ANIMATION
 const giftMessage = `Happy National Girlfriend Day ❤️
 
 Terima kasih sudah hadir di hidupku. With you,
 even ordinary moments become unforgettable.✨💖`;
 
 function gift(){
-
   const popup = document.getElementById("giftPopup");
   const text = document.getElementById("giftText");
 
@@ -740,358 +525,209 @@ function gift(){
   text.innerHTML = "";
 
   let i = 0;
-
   const typing = setInterval(() => {
     text.innerHTML += giftMessage[i];
     i++;
-
     if(i >= giftMessage.length){
       clearInterval(typing);
     }
-
   }, 30);
-
-  confetti();
 }
 
 function closeGift(){
   document.getElementById("giftPopup").style.display = "none";
 }
 
-// ================= DARK MODE =================
+function virtualHug() {
+  const emojis = ["🤗", "💖", "🫂", "💗", "💕", "✨"];
+  
+  for (let i = 0; i < 25; i++) {
+    setTimeout(() => {
+      let heart = document.createElement("div");
+      heart.className = "hug-heart";
+      heart.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+      
+      heart.style.left = (50 + (Math.random() * 60 - 30)) + "%";
+      heart.style.top = (50 + (Math.random() * 40 - 20)) + "%";
+      
+      document.body.appendChild(heart);
 
+      setTimeout(() => {
+        heart.remove();
+      }, 1800);
+    }, i * 60);
+  }
+
+  setTimeout(() => {
+    closeGift();
+    alert("🤗 Pelukan virtual berhasil terkirim hangat untuk Caca! 💕");
+  }, 1200);
+}
+
+// DARK MODE
 function darkMode() {
+  document.body.classList.toggle("dark");
+  const btn = document.getElementById("darkBtn");
+  if (document.body.classList.contains("dark")) {
+      btn.innerHTML = "☀️";
+  } else {
+      btn.innerHTML = "🌙";
+  }
+}
 
-    document.body.classList.toggle("dark");
-
-    const btn = document.getElementById("darkBtn");
-
-    if (document.body.classList.contains("dark")) {
-        btn.innerHTML = "☀️";
-    } else {
-        btn.innerHTML = "🌙";
-    } //
-} //    
-
-// ================= HEART =================
-
+// HEART FLOATING
 function createHeart(){
-
-setInterval(function(){
-
-let h=document.createElement("div");
-
-h.className="floatHeart";
-
-h.innerHTML="❤";
-
-h.style.left=Math.random()*100+"%";
-
-h.style.fontSize=(18+Math.random()*20)+"px";
-
-h.style.animationDuration=(6+Math.random()*5)+"s";
-
-document.body.appendChild(h);
-
-setTimeout(function(){
-
-h.remove();
-
-},10000);
-
-},350);
-
+  setInterval(function(){
+    let h=document.createElement("div");
+    h.className="floatHeart";
+    h.innerHTML="❤";
+    h.style.left=Math.random()*100+"%";
+    h.style.fontSize=(18+Math.random()*20)+"px";
+    h.style.animationDuration=(6+Math.random()*5)+"s";
+    document.body.appendChild(h);
+    setTimeout(function(){
+      h.remove();
+    },10000);
+  },350);
 }
 
-// ================= TOP BUTTON =================
-
+// TOP BUTTON
 window.onscroll=function(){
-
-if(document.documentElement.scrollTop>300){
-
-topBtn.style.display="block";
-
-}else{
-
-topBtn.style.display="none";
-
+  const topBtn = document.getElementById("topBtn");
+  if(document.documentElement.scrollTop>300){
+    topBtn.style.display="block";
+  }else{
+    topBtn.style.display="none";
+  }
 }
 
-}
-// ================= ROSE PETALS =================
-
+// ROSE PETALS
 function createRose(){
+  setInterval(function(){
+    let rose=document.createElement("div");
+    rose.innerHTML="🌹";
+    rose.style.position="fixed";
+    rose.style.top="-50px";
+    rose.style.left=Math.random()*100+"%";
+    rose.style.fontSize=(18+Math.random()*18)+"px";
+    rose.style.zIndex="999";
+    rose.style.pointerEvents="none";
+    rose.style.transition="8s linear";
+    document.body.appendChild(rose);
+    
+    setTimeout(function(){
+      rose.style.top="110%";
+      rose.style.transform="rotate(720deg)";
+      rose.style.opacity="0";
+    },100);
 
-setInterval(function(){
-
-let rose=document.createElement("div");
-
-rose.innerHTML="🌹";
-
-rose.style.position="fixed";
-
-rose.style.top="-50px";
-
-rose.style.left=Math.random()*100+"%";
-
-rose.style.fontSize=(18+Math.random()*18)+"px";
-
-rose.style.zIndex="999";
-
-rose.style.pointerEvents="none";
-
-rose.style.transition="8s linear";
-
-document.body.appendChild(rose);
-
-setTimeout(function(){
-
-rose.style.top="110%";
-
-rose.style.transform="rotate(720deg)";
-
-rose.style.opacity="0";
-
-},100);
-
-setTimeout(function(){
-
-rose.remove();
-
-},8500);
-
-},1200);
-
+    setTimeout(function(){
+      rose.remove();
+    },8500);
+  },1200);
 }
-
 createRose();
 
-// ================= BINTANG =================
-
+// STARS
 function createStar(){
+  setInterval(function(){
+    let star=document.createElement("div");
+    star.innerHTML="✨";
+    star.style.position="fixed";
+    star.style.left=Math.random()*100+"%";
+    star.style.top=Math.random()*100+"%";
+    star.style.fontSize=(10+Math.random()*15)+"px";
+    star.style.opacity=Math.random();
+    star.style.pointerEvents="none";
+    document.body.appendChild(star);
 
-setInterval(function(){
-
-let star=document.createElement("div");
-
-star.innerHTML="✨";
-
-star.style.position="fixed";
-
-star.style.left=Math.random()*100+"%";
-
-star.style.top=Math.random()*100+"%";
-
-star.style.fontSize=(10+Math.random()*15)+"px";
-
-star.style.opacity=Math.random();
-
-star.style.pointerEvents="none";
-
-document.body.appendChild(star);
-
-setTimeout(function(){
-
-star.remove();
-
-},2500);
-
-},500);
-
+    setTimeout(function(){
+      star.remove();
+    },2500);
+  },500);
 }
-
 createStar();
 
-// ================= CAROUSEL =================
-
+// CAROUSEL EFFECT
 let indexFoto=0;
-
 const foto=document.querySelectorAll(".grid img");
-
-setInterval(function(){
-
-foto.forEach(function(img){
-
-img.style.opacity=".5";
-
-img.style.transform="scale(.95)";
-
-});
-
-foto[indexFoto].style.opacity="1";
-
-foto[indexFoto].style.transform="scale(1.08)";
-
-indexFoto++;
-
-if(indexFoto>=foto.length){
-
-indexFoto=0;
-
+if(foto.length > 0){
+  setInterval(function(){
+    foto.forEach(function(img){
+      img.style.opacity=".6";
+      img.style.transform="scale(.95)";
+    });
+    foto[indexFoto].style.opacity="1";
+    foto[indexFoto].style.transform="scale(1.05)";
+    indexFoto++;
+    if(indexFoto>=foto.length){
+      indexFoto=0;
+    }
+  },2500);
 }
 
-},2500);
-// ================= TIMELINE =================
-
+// TIMELINE
 const timeline=document.createElement("section");
-
 timeline.innerHTML=`
-
-<h2 class="title">❤️Perjalanan Kita❤️</h2>
-
+<h2 class="title">❤️ Perjalanan Kita ❤️</h2>
 <div class="card">
-
-<h3>🌸 Pertama Bertemu</h3>
-<p>Hari dimana semuanya dimulai maaf ee syg waktu pertama kali ketemu Beta bukan kasi kesan yg bagus ma malah b ketawa syg yg ada menangis karna mo pindah kelas🫰🏼🫰🏼</p>
-
-<br>
-
-<h3>💕 Mulai Bersama</h3>
-<p> 8 mei 2026, makasih banyak sayang su mau pilih Beta sebagai pasangan di hari itu, beta Ju waktu itu aga syok sdikit karna syg yg ajak pacaran duluan😂 semoga ktong dua pu hubungan ni bisa bertahan selamanya ee🫰🏼🫰🏼 maaf ee sayang kalau waktu itu beta sempat minta putus tiba tiba 
-
-</p>
-
-<br>
-
-<h3>📸 Menciptakan Kenangan</h3>
-<p>Terima kasih su mau menciptakan banyak kenangan deng beta. 
-Setiap senyum yang terekam di foto, setiap suara di video, dan setiap tawa yang katong bagi bersama, semuanya jadi bagian dari cerita cinta yang snde mau beta lupakan. </p>
-
-<br>
-
-<h3>💍 Masa Depan</h3>
-<p>​Apapun yang berubah di masa depan, satu hal yang pasti: sayang akan selalu jadi beta pu tempat favorit untuk pulang,lopyuu sayangg ❤️</p>
-
+  <h3>🌸 Pertama Bertemu</h3>
+  <p>Hari dimana semuanya dimulai. Maaf ee syg waktu pertama kali ketemu Beta bukan kasi kesan yg bagus ma malah b ketawa syg yg ada menangis karna mo pindah kelas🫰🏼🫰🏼</p>
+  <br>
+  <h3>💕 Mulai Bersama</h3>
+  <p>8 mei 2026, makasih banyak sayang su mau pilih Beta sebagai pasangan di hari itu, beta Ju waktu itu aga syok sdikit karna syg yg ajak pacaran duluan😂 semoga ktong dua pu hubungan ni bisa bertahan selamanya ee🫰🏼🫰🏼 maaf ee sayang kalau waktu itu beta sempat minta putus tiba tiba</p>
+  <br>
+  <h3>📸 Menciptakan Kenangan</h3>
+  <p>Terima kasih su mau menciptakan banyak kenangan deng beta. Setiap senyum yang terekam di foto, setiap suara di video, dan setiap tawa yang katong bagi bersama, semuanya jadi bagian dari cerita cinta yang snde mau beta lupakan.</p>
+  <br>
+  <h3>💍 Masa Depan</h3>
+  <p>Apapun yang berubah di masa depan, satu hal yang pasti: sayang akan selalu jadi beta pu tempat favorit untuk pulang, lopyuu sayangg ❤️</p>
 </div>
-
 `;
-
 document.body.appendChild(timeline);
 
-// ================= CONFETTI =================
-
-function confetti(){
-
-for(let i=0;i<120;i++){
-
-let c=document.createElement("div");
-
-c.style.position="fixed";
-
-c.style.width="8px";
-
-c.style.height="8px";
-
-c.style.left=Math.random()*100+"vw";
-
-c.style.top="-20px";
-
-c.style.background=
-["#ff4f91","#ffd54f","#ffffff","#b388ff"]
-[Math.floor(Math.random()*4)];
-
-c.style.borderRadius="50%";
-
-c.style.pointerEvents="none";
-
-c.style.transition="5s linear";
-
-document.body.appendChild(c);
-
-setTimeout(()=>{
-
-c.style.top="110vh";
-
-c.style.transform="rotate(720deg)";
-
-},50);
-
-setTimeout(()=>{
-
-c.remove();
-
-},5200);
-
-}
-
-}
-
-setTimeout(confetti,2200);
-
-// ================= FOOTER =================
-
+// FOOTER
 const footer=document.createElement("footer");
-
 footer.style.padding="40px";
-
 footer.style.textAlign="center";
-
 footer.style.fontSize="15px";
-
 footer.innerHTML="❤️ Happy national girlfriend Day ❤️<br><br>Dibuat dengan penuh cinta untuk seseorang yang paling spesial di hidupku.";
-
 document.body.appendChild(footer);
-// ================= PESAN SELAMAT DATANG =================
 
+// WELCOME ALERT
 setTimeout(function(){
-
-alert("❤️ Selamat Datang ❤️\n\nHappy national girlfriend Day!\nSemoga cinta kita selalu abadi. 💖");
-
+  alert("❤️ Selamat Datang ❤️\n\nHappy national girlfriend Day!\nSemoga cinta kita selalu abadi. 💖");
 },2500);
 
-// ================= VIDEO =================
-
+// VIDEO PAUSE MUSIC
 const video=document.querySelector("video");
-
 if(video){
-
-video.addEventListener("play",function(){
-
-if(!music.paused){
-
-music.pause();
-
+  video.addEventListener("play",function(){
+    if(!music.paused){
+      music.pause();
+    }
+  });
+  video.addEventListener("ended", function () {
+      music.play().catch(function(error) {
+          console.log("Autoplay musik diblokir:", error);
+      });
+  });
 }
-
-});
-
-video.addEventListener("ended", function () {
-    music.play().catch(function(error) {
-        console.log("Autoplay musik diblokir:", error);
-    });
-});
-}
-
-// ================= PENUTUP =================
-
-console.log("Happy national girlfriend Day ❤️");
-// ================= BLOOM / EFFECT =================
-function startBloom() {
-    confetti();
-}
-
 </script>
 
-<!-- ================= ROMANTIC GIFT POPUP ================= -->
 <div id="giftPopup" class="gift-popup">
   <div class="gift-card">
-
     <div class="gift-photo">
       <img src="IMG-20260524-WA0010.jpg" alt="Foto Kita">
     </div>
-
     <h2>💖 Untuk Caca 💖</h2>
-
     <p id="giftText"></p>
-
     <div class="gift-hearts">💗 💞 💖 💘 💝</div>
-
-    <button class="closeGift" onclick="closeGift()">
+    <button class="closeGift" onclick="virtualHug()">
       Peluk Virtual 🤗
     </button>
-
   </div>
 </div>
 
 </body>
-</html>
+          </html>
